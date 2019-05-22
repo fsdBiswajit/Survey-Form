@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div id="main">
+    <h1 style="text-align: center;">Survey Form</h1>
+    <div id="wrapper">
+      <p>Let us know how we can improve freeCodeCamp</p>
+      <form>
+        <div class="row">
+          <div class="col-1">
+            <label for="name">Name: </label>
+          </div>
+          <div class="col-2">
+            <input type="text" name="name" placeholder="Enter Your Full Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="email">Email: </label>
+          </div>
+          <div class="col-2">
+            <input type="email" name="email" placeholder="Enter Your Email">
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-1">
+            <label for="age">Age: </label>
+          </div>
+          <div class="col-2">
+            <input type="text" name="text" placeholder="Enter Your Age">
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-1">
+            <label for="role">Which option best describes your current role?</label>
+          </div>
+          <div class="col-2">
+            <select name="role">
+              <option value="student">Student</option>
+              <option value="employee">Employee</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="recomendation">How likely is that you would recommend freeCodeCamp to a friend? </label>
+          </div>
+          <div class="col-2">
+            <input type="radio" name="recomendation" value="definitely">Definitely <br>
+            <input type="radio" name="recomendation" value="maybe">Maybe <br>
+            <input type="radio" name="recomendation" value="notSure">Not Sure <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="fav">Which option best describes your current role?</label>
+          </div>
+          <div class="col-2">
+            <select name="fav">
+              <option value="project">Project</option>
+              <option value="community">Community</option>
+              <option value="opensource">Opensource</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="checkbox">Things that should be improved in the future
+              (Check all that apply):</label>
+          </div>
+          <div class="col-2">
+            <input type="checkbox" name="fontend"> Fontend <br>
+            <input type="checkbox" name="backend"> Backend <br>
+            <!-- <input type="checkbox" name="dataVisualization"> Data Visualization <br> -->
+            <input type="checkbox" name="additionalCourse"> Additional Course <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="feedback">Any Comments or Suggestions?</label>
+          </div>
+          <div class="col-2">
+            <textarea name="feedback" cols="30" rows="5" placeholder="Enter Your Feedback Here..."></textarea>
+          </div>
+        </div>
+        <div class="button">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+              <input type="submit" value="Submit" name="submit">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
